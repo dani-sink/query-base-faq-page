@@ -1,0 +1,214 @@
+body, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+
+
+.header {
+    background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 450px){
+    .header {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+}
+
+.header__logo {
+    font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 450px) {
+    .header__logo {
+        margin-bottom: 20px;
+    }
+}
+
+.header__btnGrp {
+    display: flex;
+    gap: 10px;
+}
+
+.header__btnGrp--submit, .header__btnGrp--signIn {
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.header__btnGrp--submit:hover, .header__btnGrp--signIn:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.header__btnGrp--submit {
+    background: orange;
+}
+
+.header__btnGrp--signIn {
+    background: #00b719;
+    color: #fff;
+}
+
+
+/* MAIN */
+
+.main-container {
+    flex: 1;
+}
+
+
+/* SEARCH */
+
+.search {
+    background: #E8EAF6;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.search__title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search__wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.search__input {
+    padding: 10px 60px 10px 20px;
+    font-size: 1.2em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-right: 75px;
+    margin: 0 auto;
+}
+
+
+.search__searchIcon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(-15px);
+    font-size: 1.25em;
+    color: #999;
+}
+
+
+/* FAQ */
+
+.faq__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    margin: 80px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.faq__list-item {
+    display: flex;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+    gap: 2rem;
+    min-height: 10rem;
+}
+
+.faq__cardWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.faq__card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.faq__card-text {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.faq__card-link {
+    color: #5c6Bc0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: linear-gradient(90deg, #182848 0%, #3c00bc 100%);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.footer__column {
+    margin: 10px;
+    flex: 1 1 100px;
+
+}
+
+.footer__title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.footer__column-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
